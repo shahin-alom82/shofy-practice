@@ -3,12 +3,11 @@ import { ProductType } from "@/constants/type";
 import Image from "next/image";
 import { useState } from "react";
 
-const ProductImage = ({ product }: { product: ProductType }) => {
+const ProductImage = ({ product }: { product: ProductType}) => {
 
       const [currentImage, setCurrentImage] = useState(product?.images[0]);
 
       return (
-
             <div className="w-full flex items-center justify-between ">
                   <div className="w-1/3">
                         {/* small images */}

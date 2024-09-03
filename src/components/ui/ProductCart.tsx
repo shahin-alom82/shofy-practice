@@ -7,24 +7,13 @@ import { FiEye } from "react-icons/fi";
 import { GrFavorite } from "react-icons/gr";
 import AddToCartButton from "./AddToCartButton";
 import Link from "next/link";
-import { useEffect, useState } from "react";
 
 interface Props {
       product: ProductType;
 }
 
-export const Sidbar = ({ product }) => {
+export const Sidbar = () => {
 
-      //  increment decrement Section
-      const [existingProduct, setExistingProduct] = useState(null)
-      // @ts-ignore
-      const { cart } = useSelector((state) => state.shofy);
-      useEffect(() => {
-            // @ts-ignore
-            const availableProduct = cart?.find((item) => item?.id === product?.id);
-            // @ts-ignore
-            setExistingProduct(availableProduct);
-      }, [product, cart]);
 
 
 
@@ -32,7 +21,6 @@ export const Sidbar = ({ product }) => {
             <div className="flex flex-col gap-1 absolute right-3 mt-6 overflow-hidden transform translate-x-20 group-hover:translate-x-0 duration-300">
                   <button className="relative text-gray-800 hover:bg-themeColor hover:text-white duration-300 border-2 border-gray-200 p-2 px-2">
                         <BsCartCheck size={25} />
-                        <h1>{existingProduct!}</h1>
                   </button>
                   <button className="text-gray-800 hover:bg-themeColor hover:text-white duration-300 border-2 border-gray-200 p-2 px-2">
                         <FiEye size={25} />

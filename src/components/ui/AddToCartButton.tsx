@@ -8,7 +8,6 @@ import { GoPlus } from "react-icons/go";
 import { HiMinusSmall } from "react-icons/hi2";
 import { useDispatch, useSelector } from "react-redux";
 
-
 interface Props {
       product: ProductType;
 }
@@ -20,7 +19,6 @@ const AddToCartButton = ({ product }: Props) => {
       const handleAddToCart = () => {
             dispatch(addToCart(product))
       }
-
 
       //  increment decrement Section
       const [existingProduct, setExistingProduct] = useState(null)

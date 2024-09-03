@@ -11,7 +11,7 @@ const BottomHeader = () => {
 
       return (
             <div>
-                  <Container className="flex items-center justify-between mt-2 sticky z-50 overflow-hidden">
+                  <Container className="flex items-center justify-between mt-2">
                         <ul className="flex items-center gap-6">
                               {
                                     navLink.map((item, index) => (

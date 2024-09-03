@@ -30,7 +30,7 @@ const HomeBannerOne = async () => {
                               </h1>
                               <h1 className="lg:text-6xl text-3xl font-bold mt-3  pb-7">Collection 2024</h1>
                               <i className="text-xl">Exclusive offer<span className="text-yellow-600"> -35%</span> off this week</i>
-                              <button className="flex items-center bg-lightBg text-gray-800 py-3 px-4 mt-6 gap-2 cursor-pointer hover:bg-bannerOneColor hover:border hover:text-lightBg text-sm font-semibold rounded">
+                              <button className="flex items-center animate-bounce bg-lightBg text-gray-800 py-3 px-4 mt-6 gap-2 cursor-pointer hover:bg-bannerOneColor hover:border hover:text-lightBg text-sm font-semibold rounded">
                                     Shop Now
                                     <FaArrowRightLong />
                               </button>
